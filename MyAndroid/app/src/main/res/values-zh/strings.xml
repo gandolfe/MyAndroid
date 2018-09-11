@@ -1,0 +1,141 @@
+<!--
+  ~ Copyright (c) 2018 CoderLengary
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">WanAndroid</string>
+
+
+
+
+    <!--onboarding start-->
+    <string name="onboarding_pre_btn_desc">上一页</string>
+    <string name="onboarding_finish_btn_desc">完成</string>
+    <string name="onboarding_section_1">在这里，你可以获取许多高质量的安卓技术文章</string>
+    <string name="onboarding_intro_1">包含了Gradle, Component, JNI等方向的文章，等等</string>
+    <string name="onboarding_section_2">我们每天都会更新文章 </string>
+    <string name="onboarding_intro_2">让您能紧跟安卓技术的潮流前线</string>
+    <string name="onboarding_section_3">一个新的世界在等待着你</string>
+    <string name="onboarding_intro_3">探索未知，就在此刻</string>
+    <!--onboarding end-->
+
+    <!--login start-->
+    <string name="login_account_hint_text">请输入您的用户名</string>
+    <string name="login_password_hint_text">请输入您的密码</string>
+    <string name="login_re_password_hint_text">请再次输入您的密码</string>
+    <string name="login_btn_login">登陆</string>
+    <string name="login_btn_sign_up">注册</string>
+    <string name="link_to_sign_up">还没有一个账号吗？新建一个吧</string>
+    <string name="link_to_login">已经拥有账号了？请登陆</string>
+    <string name="login_account_desc">用户名</string>
+    <string name="login_password_desc">密码</string>
+    <string name="login_error">账号密码错误</string>
+    <string name="register_error">已经存在此用户名</string>
+    <string name="input_error">你输入的有非法字符</string>
+    <string name="repassword_not_match">密码不匹配，请确认您的密码</string>
+
+    <!--login end-->
+
+    <!--main start-->
+    <string name="nav_log_out">注销</string>
+    <string name="nav_about">关于</string>
+    <string name="nav_switch_theme">日/夜间模式</string>
+    <string name="nav_settings">设置</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_articles">文章</string>
+    <string name="nav_categories">类别</string>
+    <string name="empty_text">这里空空的</string>
+    <string name="item_menu_search">查询</string>
+    <!--main end-->
+
+    <!--Timeline start-->
+    <string name="timeline_label">时间轴</string>
+    <string name="timeline_articles">文章</string>
+    <string name="timeline_favorites">收藏</string>
+    <string name="timeline_read_later">稍后再读</string>
+    <!--Timeline end-->
+    
+    <!--Detail start-->
+    <string name="detail_label">文章详情页</string>
+    <string name="detail_collect_article">收藏文章</string>
+    <string name="detail_uncollect_article">取消收藏文章</string>
+    <string name="detail_add_to_read_later">添加到稍后再读</string>
+    <string name="detail_remove_from_read_later">从稍后再读中移除</string>
+    <string name="detail_copy_the_link">复制链接</string>
+    <string name="detail_share">分享</string>
+    <string name="detail_share_to">分享到</string>
+    <string name="detail_open_in_system_browser">在系统浏览器中打开</string>
+    <string name="detail_copied_to_clipboard">复制到剪贴板</string>
+    <string name="detail_no_browser_found">没有找到浏览器</string>
+    <string name="detail_no_activity_found">没有找到应用</string>
+    <string name="detail_collect_article_error">收藏文章失败</string>
+    <string name="detail_collect_article_success">成功</string>
+    <string name="detail_uncollect_article_error">取消收藏文章失败</string>
+    <string name="detail_uncollect_article_success">成功</string>
+    <!--Detail end-->
+
+    <!--Categories start-->
+    <string name="categories_label">所有类别</string>
+    <!--Categories end-->
+
+    <!--Category start-->
+    <string name="category_label">类别</string>
+    <!--Category end-->
+
+    <!--Search start-->
+    <string name="search_label">搜索</string>
+    <string name="search_tint">搜索文章</string>
+    <!--Search end-->
+
+    <!--About start-->
+    <string name="about_settings">设置</string>
+    <string name="about_navigation_bar_tint">导航栏变色</string>
+    <string name="about_navigation_bar_tint_desc">导航栏着色</string>
+    <string name="about_navigation_bar_restart_msg">在重启应用后，设置才会生效</string>
+    <string name="about_version">版本</string>
+    <string name="about_rate">评分</string>
+    <string name="about_rate_desc">如果您喜欢这个APP，请给我好评</string>
+    <string name="about_licenses">证书</string>
+    <string name="about_thanks">致谢</string>
+    <string name="about_lizhaotailang">Li Zhao Tai Lang</string>
+    <string name="about_lizhaotailang_desc">十分感谢他给予的帮助</string>
+    <string name="about_lizhaotailang_link">https://github.com/TonnyL</string>
+    <string name="about_hongyang">Hong Yang</string>
+    <string name="about_hongyang_desc">API提供者</string>
+    <string name="about_hongyang_link">https://github.com/hongyangAndroid</string>
+    <string name="about_support">支持</string>
+    <string name="about_source_code">源码地址</string>
+    <string name="about_source_code_link">https://github.com/CoderLengary/WanAndroid</string>
+    <string name="about_send_advices">发送改进意见</string>
+    <string name="about_send_advices_desc">帮助我改进这个APP</string>
+    <string name="mail_account">mailto:719952215@qq.com</string>
+    <string name="mail_topic">WanAndroid Advices</string>
+    <!--About end-->
+
+
+    <!--Error-->
+    <string name="error">出错了。。。</string>
+    <string name="network_error">网络不可用</string>
+    <!--Error-->
+
+    <!--Warning-->
+    <string name="warning_title">警告</string>
+    <string name="warning_desc">如果您注销，所有数据会被清空</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确认</string>
+    <string name="tip">自动登陆失败，请重新登陆</string>
+    <!--Warning-->
+</resources>
