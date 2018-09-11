@@ -47,7 +47,8 @@
     <string name="repassword_not_match">The repassword and password you entered does not match</string>
 
     <!--login end-->
-	<string name="sshtest1">sshtest1</string>
+	
+	
     <!--main start-->
     <string name="nav_log_out">Log Out</string>
     <string name="nav_about">About</string>
