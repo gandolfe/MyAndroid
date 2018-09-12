@@ -17,7 +17,7 @@
 <resources>
     <string name="app_name">WanAndroid</string>
 
-
+	<string name = "gitversion"> dev </string>
 
 
     <!--onboarding start-->
