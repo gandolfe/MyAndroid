@@ -47,9 +47,10 @@
     <string name="repassword_not_match">The repassword and password you entered does not match</string>
 
     <!--login end-->
-
+	
+	
     <!--main start-->
-    <string name="nav_log_out">Log out</string>
+    <string name="nav_log_out">Log Out</string>
     <string name="nav_about">About</string>
     <string name="nav_switch_theme">Day/Night Mode</string>
     <string name="nav_settings">Settings</string>
