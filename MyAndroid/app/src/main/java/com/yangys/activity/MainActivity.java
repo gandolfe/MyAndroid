@@ -1,5 +1,6 @@
 package com.yangys.activity;
 
+import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -27,5 +28,12 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawerLayout);
         navigationView = findViewById(R.id.navi_view);
         setSupportActionBar(toolbar);
+    }
+
+    public void moveToLoginActivity(){
+        Intent intent  = new Intent();
+        intent.setClass(this,LoginMainActivity.class);
+        startActivity(intent);
+        finish();
     }
 }

@@ -23,6 +23,9 @@ public interface ArticleContract {
     }
 
     interface View extends BaseView<Presenter>{
+
+        void autoLogin(String userName,String passWord);
+
         boolean isActive();
 
         void setLoadingIndicator(boolean isloding);

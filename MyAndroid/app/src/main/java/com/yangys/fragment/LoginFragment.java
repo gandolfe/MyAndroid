@@ -1,7 +1,10 @@
 package com.yangys.fragment;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
@@ -18,6 +21,7 @@ import com.yangys.activity.MainActivity;
 import com.yangys.model.LoginDetailData;
 import com.yangys.model.LoginType;
 import com.yangys.mvp.LoginContract;
+import com.yangys.utils.SettingsUtil;
 import com.yangys.utils.TextUtil;
 
 import example.com.myandroid.R;
@@ -33,12 +37,20 @@ public class LoginFragment extends Fragment implements LoginContract.View{
     private AppCompatButton btnLogin;
     private TextView linkSignUp;
     private LoginContract.Presenter presenter;
-
     private static final String TAG = "LoginFragment";
 
-    public static LoginFragment getInstance(){
 
-        return new LoginFragment();
+    public LoginFragment(){
+
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getContext());
+        if(sp.getBoolean(SettingsUtil.KEY_SKIP_LOGIN_PAGE,false)){
+            moveToMainActivity();
+        }
     }
 
     @Nullable
@@ -97,12 +109,13 @@ public class LoginFragment extends Fragment implements LoginContract.View{
 
     @Override
     public void saveUserToPreference(LoginDetailData loginDetailData) {
-        Log.i(TAG,"saveUserToPreference : "+loginDetailData.getUsername());
         //登陆成功执行此逻辑
-        Intent intent = new Intent(getContext(), MainActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        getActivity().startActivity(intent);
-
+        Log.i(TAG,"saveUserToPreference : "+loginDetailData.getUsername());
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getContext());
+        sp.edit().putString(SettingsUtil.USERID,loginDetailData.getUsername()).apply();
+        sp.edit().putString(SettingsUtil.PASSWORD,loginDetailData.getPassword()).apply();
+        sp.edit().putBoolean(SettingsUtil.KEY_SKIP_LOGIN_PAGE,true).apply();
+        moveToMainActivity();
     }
 
     @Override
@@ -119,5 +132,11 @@ public class LoginFragment extends Fragment implements LoginContract.View{
             isValid = true;
         }
         return isValid;
+    }
+
+    public void moveToMainActivity(){
+        Intent intent = new Intent(getContext(), MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        getActivity().startActivity(intent);
     }
 }
