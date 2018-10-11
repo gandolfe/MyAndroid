@@ -46,13 +46,14 @@ public class LoginPresenter implements LoginContract.Presenter{
                 .subscribeWith(new DisposableObserver<LoginData>() {
                     @Override
                     public void onNext(LoginData value) {
-                        Log.i(TAG,"value:"+value.getData().getUsername());
+
                         if(!view.isActive()){
                             return;
                         }
                         if(value.getErrorCode() == -1){
                             view.showLoginError(value.getErrorMsg());
                         }else{
+                            Log.i(TAG,"value:"+value.getData().getUsername());
                             view.saveUserToPreference(value.getData());
                         }
                     }

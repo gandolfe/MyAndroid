@@ -100,5 +100,6 @@ public class ArticleFragment extends Fragment implements ArticleContract.View{
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getContext());
         sp.edit().putBoolean(SettingsUtil.KEY_SKIP_LOGIN_PAGE,false).apply();
         ((MainActivity)getActivity()).moveToLoginActivity();
+        getActivity().finish();
     }
 }
