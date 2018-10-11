@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/bot_nav_timeline"
+            android:icon="@drawable/ic_articles_black_24dp"
+            android:title="@string/nav_articles"/>
+
+        <item android:id="@+id/bot_nav_categories"
+            android:icon="@drawable/ic_art_categories_black_24dp"
+            android:title="@string/nav_categories"/>
+
+        <item android:id="@+id/bot_nav_help"
+            android:icon="@drawable/ic_about_black_24dp"
+            android:title="@string/nav_about"/>
+    </group>
+</menu>
