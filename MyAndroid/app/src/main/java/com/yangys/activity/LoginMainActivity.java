@@ -1,15 +1,13 @@
 package com.yangys.activity;
 
-import android.app.Activity;
-import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.yangys.fragment.login.LoginFragment;
 import com.yangys.data.login.LoginDataRemoteSource;
 import com.yangys.data.login.LoginDataRepository;
 import com.yangys.data.login.loginDataLocalSource;
-import com.yangys.fragment.LoginFragment;
 import com.yangys.mvp.presenter.LoginPresenter;
 
 import example.com.myandroid.R;

@@ -1,4 +1,4 @@
-package com.yangys.fragment;
+package com.yangys.fragment.login;
 
 import android.support.v4.app.Fragment;
 

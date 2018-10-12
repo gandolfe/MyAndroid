@@ -1,4 +1,4 @@
-package com.yangys.fragment;
+package com.yangys.fragment.timeline;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
