@@ -25,6 +25,9 @@ public interface RetrofitService {
     @POST(Api.REGISTER)
     Observable<LoginData> register(@Field("username") String username,@Field("password") String password,@Field("repassword") String repassword);
 
+
     //获取文章
+    @FormUrlEncoded
+    @GET(Api.ARTICAL_LIST)
     Observable<ArticlesData> getArticles(@Path("page") int page);
 }

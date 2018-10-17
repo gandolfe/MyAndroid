@@ -11,6 +11,10 @@
             android:id="@+id/timeline_tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabTextColor="@color/colorPrimaryText"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabSelectedTextColor="@color/colorPrimary"
             app:tabBackground="@color/layout_background" />
 
     </android.support.design.widget.AppBarLayout>
